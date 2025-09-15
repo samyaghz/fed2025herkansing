@@ -58,6 +58,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
 
+  ### Screenreader
+  Om de website die ik ga coderen te testen of hij voldoet aan toegankelijkheid heb ik de website getest met een screenreader. Tijdens het testen heb ik een aantal interessante bevindingen gevonden.
+
+  Tijdens het testen werden vrijwel alle links opgenoemd, maar er staan in de lijst allemaal nummers (?). Het is niet duidelijk waar deze nummers vandaan komen en wat ze betekenen. Dit is niet gebruikersvriendelijk/toegankelijk. Hierdoor haakte ik af.
+
+  De navigatie wordt opgelezen, maar het is niet duidelijk waar we zijn in de navigatie.
+
+  De navigatie sluit niet vanzelf. Er worden allemaal dingen opgelezen die op de pagina achter de navigatie staan.
+
+  De Voiceover begint steeds opnieuw als je ergens op drukt, of hij leest niet verder
+  
+  Kopjes worden niet weergegeven die in de grid staan. Het lijkt alsof het helemaal wordt overgeslagen. De footer wordt opgelezen ipv de informatie die direct op de pagina staat.
+
+  De voiceover vond ik best irritant, omdat het enige wat ik hoorde was "link, link, link, link". Er was geen afwisseling in het lezen van wat er op de webpagina staat.
+
 </details>
 
 
