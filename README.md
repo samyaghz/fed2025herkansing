@@ -103,7 +103,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  - Het gaat wel goed denk ik tot nu toe met de html, het enige waar ik tegen aan loop is dat veel van dezelfde elementen terug komen in de html. Ik vraag mij dan af hoe ik dit dan moet vormgeven in de css. Ik vind het ook lastig om te bepalen wat er allemaal in mijn header moet staan. Mijn website heeft wel een h1(vormgegeven als knop), maar dan met een img erachter en de nav staat op de image.
 
 
   ### Agenda voor meeting
@@ -125,7 +125,7 @@ Samya:
 3. Moeten er in de <nav> links staan, of buttons voor mijn menu?
 
 Bener:
-1. Wanneer gebruik ik <ul> en wanneer <ol>?
+1. Wanneer gebruik ik ul en wanneer ol?
 2. ik heb langb niet gecodeerd. Hoe onderscheid ik een parent van een child? En wat betekenen ze?
 3. Er staat geen h1 op de homepagina van mijn website, maar met een grote logo. Mag deze als h1 worden gebruikt?
 
