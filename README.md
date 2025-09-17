@@ -110,19 +110,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   samen met je groepje opstellen
 
 Phon:
-1. Mag je ook (meerdere) <section>(s) in je <footer> hebben?
+1. Mag je ook (meerdere) section(s) in je footer hebben?
 2. Wat is het html element die ik moet gebruiken voor de beoordeling onderaan
-3. Moet er in de <head> een <header> of is dat onnodig
+3. Moet er in de head een header of is dat onnodig
 
 Zineb:
 1. Hoe kun je iconen dowloaden van de site?
-2. Wanneer gebruik ik <section> en wanneer <article>?
-3. Wanneer gebruik ik <figure> en <figcaption> en wanneer alleen een <img>?
+2. Wanneer gebruik ik section en wanneer article?
+3. Wanneer gebruik ik figure en figcaption en wanneer alleen een img?
 
 Samya:
 1. Kan ik in een section andere html elementen stoppen zonder een article om de section heen te zetten?
 2. Moet je een section zetten om de header als er een img in zit en een link?
-3. Moeten er in de <nav> links staan, of buttons voor mijn menu?
+3. Moeten er in de nav links staan, of buttons voor mijn menu?
 
 Bener:
 1. Wanneer gebruik ik ul en wanneer ol?
