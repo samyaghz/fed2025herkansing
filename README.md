@@ -127,7 +127,7 @@ Samya:
 Bener:
 1. Wanneer gebruik ik <ul> en wanneer <ol>?
 2. ik heb langb niet gecodeerd. Hoe onderscheid ik een parent van een child? En wat betekenen ze?
-3. Er staat geen <h1> op de homepagina van mijn website, maar met een grote logo. Mag deze als <h1> worden gebruikt?
+3. Er staat geen h1 op de homepagina van mijn website, maar met een grote logo. Mag deze als h1 worden gebruikt?
 
 
   ### Verslag van meeting
