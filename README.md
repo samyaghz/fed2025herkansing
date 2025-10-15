@@ -215,14 +215,33 @@ Bener:
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Bener     | Zineb          | Kanokphon    | Samya        |
-  | ---            | ---                | ---          | ---              |
-  | 1.⁠ ⁠Hoe maak je ook alweer een foto carousel/slider? (Automatisch)
-  | 2.⁠ ⁠Hoe maak ik hover animaties in die carousel?
-             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  Bener:
+  1.⁠ ⁠Hoe maak je ook alweer een foto carousel/slider? (Automatisch)
+  2.⁠ ⁠Hoe maak ik hover animaties in die carousel?
+  3.⁠ ⁠Hoe maak ik die blauwe lijntjes tussendoor mijn sections in mijn website?  (lab111.nl)
+  4.⁠ ⁠Specials img of banner?
+  5.⁠ ⁠Hoe verstop ik de rest van tekst in mijn captions?
+  6.⁠ ⁠Icoontjes in footer. Hover, linkjes, svg?
+  
+  Zineb:
+  - Waarom zie ik niet alle html elementen van mijn footer?
+  - Klopt mijn css hyrargie: common, index en testrit
+  - Hoe kan ik de kleur van mijn iconen aanpassen 
+  - Ik heb in mijn navigatie a gebruikt ipv buttons. Kan ik dit in javascript makkelijk gebruiken, omdat het dus niet echt wordt gelinkt naar een pagina maar op de pagina blijft.
+  
+  Kanokphon:
+  1.⁠ ⁠Hoe kan ik in 1x dark mode via root coderen?
+  2.⁠ ⁠Wat heb ik gedaan dat mijn kleuren van mijn root niet toe gepassen kunnen worden?
+  3.⁠ ⁠Moet ik elke button in mijn site werkend maken?
+  4.⁠ ⁠Hoe krijg ik 1 versie van de beoordeling afbeelding in css ipv deze afbeelding meerdere keren achter elkaar?
+  5.⁠ ⁠Hoe moet ik de favorieten hartje bij de producten aan spreken in css.?
+  6.⁠ ⁠Hoe kan ik alleen de social media bij de beoordeling naast elkaar krijgen?
+  7.⁠ ⁠Hoeveel js moeten we hebben, 1 toch?
 
+  Samya:
+  1.⁠ ⁠Hoe zet ik iconen in de footer naast elkaar?
+  2.⁠ ⁠⁠Mijn sluit knop van de hamburger menu doet het niet, waar kan dat aan liggen?
+  3.⁠ ⁠⁠hoe style ik foto’s in een bepaalde vorm?
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
