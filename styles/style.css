@@ -1,8 +1,10 @@
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
 }
 
 
@@ -15,9 +17,184 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-text: #111;
+	--color-background: #eee;
 }
+
+@font-face {
+	font-family: 'Poppins';
+	src: url('../fonts/poppins-v20-latin-300.woff2') format('woff2');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PoppinsItalic';
+	src: url('../fonts/poppins-v20-latin-300italic.woff2') format('woff2');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PoppinsLatin';
+	src: url('../fonts/poppins-v20-latin-500.woff2') format('woff2');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PoppinsBold';
+	src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@media (min-width: 64em) {}
+
+body {
+	background-color: #f7efe3;
+	font-family: 'Poppins', sans-serif;
+	display: block;
+}
+
+h1 {
+	border: white;
+	border-radius: 0.5em;
+	font-family: 'PoppinsBold', sans-serif;
+}
+
+header {
+	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: sticky;
+	top: 0;
+}
+
+h2:first-of-type {
+	color: #003340;
+	font-weight: 400;
+}
+
+nav ul li {
+	margin: 20%;
+	text-transform: uppercase;
+}
+
+header>button {
+	order: -1;
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	translate: -100%;
+	transition: 2s;
+}
+
+/* als menu open is */
+nav.is-open {
+	translate: 0%;
+}
+
+@media (min-width:38em) {
+	header>button {
+
+		display: none;
+
+	}
+
+	nav {
+		
+		position: static;
+		translate: 0;
+
+		background: none;
+	}
+
+	nav button {
+		
+		display: none;
+
+	}
+
+	nav ul {
+		
+		display: flex;
+		gap: 1em;
+
+	}
+
+	nav a {
+		
+		border: none;
+		flex-direction: column;
+	}
+
+	header>a:last-of-type {
+		
+		flex-direction: column;
+
+	}
+}
+
+
+
+/****************************************************************/
+/* styling voor de header als de browser minimaal 57em breed is */
+/****************************************************************/
+@media (min-width:57em) {
+
+	header>a:last-of-type,
+	nav a {
+		/* JOUW CODE HIER - stap 10 */
+
+		flex-direction: row;
+
+	}
+}
+
+main section h2 {
+	position: relative;
+	
+  }
+  
+main section h2 {
+	position: absolute;
+	bottom: 1rem;
+	left: 1rem;
+	right: 1rem;
+	
+  }
+
+
+main p:nth-of-type(1) {
+	font-family: 'Poppins', sans-serif;
+	border-color: white;
+	border-radius: 1em;
+}
+
+main section:nth-of-type(2) {
+	display: grid;
+	inset: 5 5 5 5;
+	background-color: white;
+}
+
+main section:nth-of-type(3),
+a {
+	background-color: #d3104c;
+	inline-size: 70%;
+}
+
+
+
+
+
+
 
 
 
@@ -28,4 +205,3 @@
 /****************/
 
 /* jouw code */
-

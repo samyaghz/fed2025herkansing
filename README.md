@@ -126,17 +126,28 @@ Samya:
 
 Bener:
 1. Wanneer gebruik ik ul en wanneer ol?
-2. ik heb langb niet gecodeerd. Hoe onderscheid ik een parent van een child? En wat betekenen ze?
+2. ik heb lang niet gecodeerd. Hoe onderscheid ik een parent van een child? En wat betekenen ze?
 3. Er staat geen h1 op de homepagina van mijn website, maar met een grote logo. Mag deze als h1 worden gebruikt?
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  Aanwezigen:
+  - Zineb
+  - Kanokphon
+  - Bener
+  - Samya
+
+  Docent & studentassistent:
+  - Sanne
+  - Anouar
+
+  We hebben tijdens de meeting onze code besproken en elkaar feedback gegeven en antwoord kunnen geven op elkaars vragen. We hebben samen elkaars html verbeterd door er aandachtig naar te kijken en feedback te geven over welke code wel correct is en wanneer je welke code gebruikt. Ik heb bijvoorbeeld feedback gekregen op wat er in mijn header moet staan.
+
+  Ik ben er ook achter gekomen dat ik moet kijken naar of de images decoratie of informatie zijn. Alle decoratieve images moeten daarom in de css met de css tag background-image. Ik heb nu ook weer geleerd hoe ik een h1 kan verbergen van de pagina, maar dat het toch wel door de screenreader gelezen kan worden. Ik heb ook geleerd hoe je een table of content kunt maken in je html pagina.
+
+  Ik ben gaan realiseren dat ik wel veel nog moet gaan doen aan mijn html en dit ook moet laten valideren door student-assistenten, medestudenten en docenten & ik kan een online validator gebruiken. 
 
 </details>
 
