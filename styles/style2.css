@@ -1,0 +1,48 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text: #111;
+	--color-background: #eee;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: url('../fonts/poppins-v20-latin-300.woff2') format('woff2');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PoppinsItalic';
+	src: url('../fonts/poppins-v20-latin-300italic.woff2') format('woff2');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PoppinsLatin';
+	src: url('../fonts/poppins-v20-latin-500.woff2') format('woff2');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PoppinsBold';
+	src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2');
+	font-weight: 600;
+	font-style: normal;
+}
+

@@ -61,10 +61,19 @@ h1 {
 	border: white;
 	border-radius: 0.5em;
 	font-family: 'PoppinsBold', sans-serif;
+	position: absolute;
+	width: 0.0625em;
+	height: 0.0625em;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	white-space: nowrap;
+	border: 0;
+	margin: 0;
+	padding: 0;
 }
 
 header {
-	
+
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -80,6 +89,7 @@ h2:first-of-type {
 nav ul li {
 	margin: 20%;
 	text-transform: uppercase;
+	list-style-type: none;
 }
 
 header>button {
@@ -94,6 +104,7 @@ nav {
 	right: 0;
 	translate: -100%;
 	transition: 2s;
+	background-color: white;
 }
 
 /* als menu open is */
@@ -109,7 +120,7 @@ nav.is-open {
 	}
 
 	nav {
-		
+
 		position: static;
 		translate: 0;
 
@@ -117,26 +128,26 @@ nav.is-open {
 	}
 
 	nav button {
-		
+
 		display: none;
 
 	}
 
 	nav ul {
-		
+
 		display: flex;
 		gap: 1em;
 
 	}
 
 	nav a {
-		
+
 		border: none;
 		flex-direction: column;
 	}
 
 	header>a:last-of-type {
-		
+
 		flex-direction: column;
 
 	}
@@ -158,6 +169,7 @@ nav.is-open {
 	}
 }
 
+/*  
 main section h2 {
 	position: relative;
 	
@@ -170,9 +182,100 @@ main section h2 {
 	right: 1rem;
 	
   }
+*/
 
+main {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	padding: 1rem;
+}
 
-main p:nth-of-type(1) {
+/* main section img {
+	position: relative;
+} */
+
+main > a {
+	background-color: #d3104c;
+	
+}
+
+main > section {
+	padding: 1.5rem;
+	border-radius: 1rem;
+	color: #fff;
+}
+
+main > section:nth-of-type(1) {
+	background-color: #ffffff;
+	color: #0a3140;
+	position: relative;
+  }
+
+main > section:nth-of-type(1) h2 {
+	position: absolute;
+	bottom: 1rem;
+	left: 1rem;
+	right: 1rem;
+	background-color: #f7efe3;
+	font-family: 'PoppinsBold', sans-serif;
+	font-size: 2.5em;
+}
+
+  main > section:nth-of-type(2) {
+	background-color: #d3104c;
+  }
+  
+  main > section:nth-of-type(3) {
+	background-color: #d3104c;
+  }
+  
+  main > section:nth-of-type(4) {
+	background-color: #0a3140;
+  }
+  
+  /* Tekststructuur binnen secties */
+  section h2 {
+	font-size: 1.3rem;
+	margin-bottom: 0.5rem;
+  }
+  
+  section p {
+	margin-bottom: 1rem;
+	line-height: 1.5;
+  }
+  
+  /* Links (knoppenstijl) */
+  section a {
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+	border-bottom: 2px solid currentColor;
+	display: flex;
+	align-items: center;
+	gap: 0.3em;
+  }
+  
+  section a::after {
+	content: "›";
+	font-size: 1.2em;
+  }
+  
+  /* Speciale knop bij Toekomstmakers */
+  section:last-of-type button {
+	background-color: #fff;
+	color: #0a3140;
+	font-weight: bold;
+	padding: 0.5rem 1rem;
+	border: none;
+	border-radius: 0.5rem;
+  }
+  
+  section:last-of-type button:hover {
+	background-color: #e6e6e6;
+  }
+
+/* main > section:nth-of-type(1) {
 	font-family: 'Poppins', sans-serif;
 	border-color: white;
 	border-radius: 1em;
@@ -188,6 +291,53 @@ main section:nth-of-type(3),
 a {
 	background-color: #d3104c;
 	inline-size: 70%;
+}
+
+section article:nth-of-type(2) h3 {
+	position: relative;
+} */
+
+main section article:nth-of-type(1) {
+	position: relative;
+}
+main section article:nth-of-type(1) h3 {
+	position: absolute;
+	align-items: center;
+	font-family: 'PoppinsBold', sans-serif;
+	font-size: 1.5em;
+}
+
+main section article:nth-of-type(2) {
+	position: relative;
+}
+
+main section article:nth-of-type(2) h3 {
+	position: absolute;
+	align-items: center;
+	font-family: 'PoppinsBold', sans-serif;
+	font-size: 1.5em;
+}
+
+main section article:nth-of-type(3) {
+	position: relative;
+}
+
+main section article:nth-of-type(3) h3 {
+	position: absolute;
+	align-items: center;
+	font-family: 'PoppinsBold', sans-serif;
+	font-size: 1.5em;
+}
+
+main section article:nth-of-type(4) {
+	position: relative;
+}
+
+main section article:nth-of-type(4) h3 {
+	position: absolute;
+	align-items: center;
+	font-family: 'PoppinsBold', sans-serif;
+	font-size: 1.5em;
 }
 
 

@@ -162,12 +162,13 @@ Bener:
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik vond het best lastig om font face te gebruiken in mijn css. Om 1 of andere reden deed dit het niet. Ik heb hierop feedback ontvangen van de student-assistenten. We hebben dit het hele moment uit zitten vogelen en uiteindelijk hebben we de juiste code erin kunnen zetten.
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Bener      | Kanokphon         | Samya    | student 4        |
   | ---            | ---                | ---          | ---              |
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
@@ -214,9 +215,11 @@ Bener:
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Bener     | Zineb          | Kanokphon    | Samya        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
+  | 1.⁠ ⁠Hoe maak je ook alweer een foto carousel/slider? (Automatisch)
+  | 2.⁠ ⁠Hoe maak ik hover animaties in die carousel?
+             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
