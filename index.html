@@ -8,22 +8,56 @@
 
 	<title>Hogeschool Rotterdam</title>
 
-	<link href="styles/style.css" rel="stylesheet">
+	<link href="styles/homepagina.css" rel="stylesheet">
+	<link href="styles/styles.css" rel="stylesheet">
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 
 <body>
+	<a href="#main">Ga direct naar de inhoud</a>
 	<header>
 		<h1>Welkom op de website van Hogeschool Rotterdam</h1>
 
+		<section>
+			<svg class="svg-icons-login2" width="14" height="17" viewbox="0 0 14 17" version="1.1"
+				xmlns="http://www.w3.org/2000/svg">
+				<title>Combined Shape</title>
+				<g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+					<g id="Icons/Login" transform="translate(-8 -7)" fill="#000">
+						<path
+							d="M5.036 6.889a3.387 3.387 0 1 1 3.929 0c2.511.897 4.325 3.47 4.325 6.502 0 3.78-12.58 3.78-12.58 0 0-3.033 1.814-5.605 4.326-6.502z"
+							transform="translate(8 7)" id="Combined-Shape"></path>
+					</g>
+				</g>
+			</svg>
+			<button class="header__link header__link--toggle-search toggle-search" aria-controls="search-modal">
+				<span class="header__link-icon">
+					<svg class="svg-icons-search" width="29" height="29" viewbox="0 0 29 29" version="1.1"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M7.958 17.433a10.748 10.748 0 0 1-2.089-6.367C5.869 4.954 11.007 0 17.345 0 23.683 0 28.82 4.954 28.82 11.066c0 6.112-5.138 11.066-11.476 11.066a11.72 11.72 0 0 1-6.49-1.938l-7.237 7.99L.653 25.5l7.305-8.067zm9.387 1.699c4.705 0 8.476-3.636 8.476-8.066C25.82 6.636 22.05 3 17.345 3c-4.705 0-8.476 3.636-8.476 8.066 0 4.43 3.77 8.066 8.476 8.066z"
+							fill="#000" stroke="none" stroke-width="1" fill-rule="evenodd"></path>
+					</svg>
+				</span>
+				<span class="header__link-text">
+					Zoeken
+				</span>
+			</button>
+			<path fill="#C03"
+				d="M31.7 14.3c-.2 1.2-1.3 2.6-2.8 3.4-1.6.9-3.1.8-3.6-.1 1.1-1.3 1.9-2.7 2.3-4 .2-.7.2-1.4.1-2.1-.5-2.9-4.2-3.4-8.2-1.2L19 7.5l-4.2 2.3.7 3.6c.4-.3.9-.4 1.3-.5 1.3-.1 1.7 1.3.9 3.3-.3.7-.7 1.3-1.2 1.9l.8 4.2v.1c.6 2.8 4.3 3.3 8.3 1.1 3.7-2.3 6.5-6.3 6.1-9.2zM13.5 19.9c-1.3.1-1.7-1.3-.9-3.3.4-.8.9-1.5 1.4-2.1l-.8-3.9-8.3 4.6 2.4 12.5 8.3-4.6-.7-3.8c-.5.3-1 .5-1.4.6z">
+			</path>
+		</section>
+
 		<a href>Icon</a>
-		
-		<button aria-hidden="true"><img src="https://assets.codepen.io/274456/ui-icon-hamburger.svg" alt="menu" />Menu</button>
-		
+
+		<button aria-hidden="false"><img src="https://assets.codepen.io/274456/ui-icon-hamburger.svg"
+				alt="menu" />Menu</button>
+
 		<nav>
 			<ul>
 				<li>
-					<button aria-hidden="true"><img src="https://assets.codepen.io/274456/ui-icon-cross.svg" alt="sluit menu" />Sluit</button>
+					<button aria-hidden="false"><img src="https://assets.codepen.io/274456/ui-icon-cross.svg"
+							alt="sluit menu" />Sluit</button>
 				</li>
 				<li>
 					<a href="#">Home</a>
@@ -47,133 +81,171 @@
 		</nav>
 	</header>
 
-	<main>
+	<main id="main">
 		<section>
 			<h2>Hoe ver ben jij met je studiekeuze?</h2>
-			<img src="./images/header1hogeschoolrotterdam.jpg" alt="Header hogeschool rotterdam">
 		</section>
 		<a href="#">Ontdek het in 3 stappen</a>
 		<section>
-			<h2>Kom naar de open dag</h2>
+			<h3>Kom naar de open dag</h3>
 			<p>Bezoek onze locaties op zaterdag 8 november van 10.00 tot 14.00 uur.</p>
 			<a href="#">Meld je aan!</a>
+
 		</section>
+
 		<section>
-			<h2>Studiekeuzetest</h2>
+			<h3>Studiekeuzetest</h3>
 			<p>Ontdek welke bachelor- en Associate Degree-opleidingen bij jou passen en waarom dit zo is</p>
 			<a href="#">Meld je aan!</a>
+
+		</section>
+		<section><a href="./toekomstmakers.html">
+				<h3>Toekomstmakers</h3>
+				<p>Onze (oud)studenten laten zien hoe zij de toekomst maken. Voor zichzelf én voor een ander</p>
+				Naar de toekomstmakers
+			</a>
 		</section>
 		<section>
-			<h2>Toekomstmakers</h2>
-			<p>Onze (oud)studenten laten zien hoe zij de toekomst maken. Voor zichzelf én voor een ander</p>
-			<button>Naar onze toekomstmakers</button>
-			<a href="#">Naar de toekomstmakers</a>
-		</section>
-		<section>
 			<article>
 				<a href="#">
-				<h3>Bekijk onze opleidingen</h3>
-				<img src="./images/bekijkonzeopleidingen.jpg" alt="bekijk onze opleidingen"></a>
+					<h3>Bekijk onze opleidingen</h3>
+					<!-- <img src="./images/bekijkonzeopleidingen.jpg" alt="bekijk onze opleidingen"> -->
+				</a>
 			</article>
 			<article>
 				<a href="#">
-				<h3>Ontdek onze locaties</h3>
-				<img src="./images/ontdekonzelocaties.jpg" alt="ontdek onze locaties"></a>
+					<h3>Ontdek onze locaties</h3>
+					<!-- <img src="./images/ontdekonzelocaties.jpg" alt="ontdek onze locaties"> -->
+				</a>
 			</article>
 			<article>
 				<a href="#">
-				<h3>Studeren bij Hogeschool Rotterdam</h3>
-				<img src="./images/studerenbijrotterdam.jpg" alt="studeren bij hogeschool rotterdam"></a>
+					<h3>Studeren bij Hogeschool Rotterdam</h3>
+					<!-- <img src="./images/studerenbijrotterdam.jpg" alt="studeren bij hogeschool rotterdam"> -->
+				</a>
 			</article>
 			<article>
 				<a href="#">
-				<h3>Studeren in Rotterdam</h3>
-				<img src="./images/studereninrotterdam.jpg" alt="studeren in rotterdam"></a>
+					<h3>Studeren in Rotterdam</h3>
+					<!-- <img src="./images/studereninrotterdam.jpg" alt="studeren in rotterdam"> -->
+				</a>
 			</article>
 		</section>
 		<section>
-			<h4>Ontdek wat bij je past</h4>
+			<h4><strong>Ontdek wat bij je past</strong></h4>
 			<article>
 				<h5>Open dagen</h5>
-				<p>kom langs</p>
-				<p>maak kennis met onze opleidingen op locatie en proef de sfeer</p>
+				<p>Kom langs</p>
+				<a href="#">
+					<p>Maak kennis met onze opleidingen op locatie en proef de sfeer</p>
+				</a>
 				<a href="#">Bekijk meer informatie</a>
+				<img src="images/opendag.jpg" alt="">
 			</article>
 			<article>
 				<h5>Proefstuderen</h5>
 				<p>Maak kennis</p>
-				<p>Maak kennis met onze opleidingen tijdens een proefstudeerdag</p>
+				<a href="#">
+					<p>Maak kennis met onze opleidingen tijdens een proefstudeerdag</p>
+				</a>
 				<a href="#">Bekijk het aanbod</a>
+				<img src="images/proefstuderen.jpg" alt="">
 			</article>
 			<article>
 				<h5>Onze opleidingen</h5>
 				<p>Vind jouw opleiding</p>
-				<p>Een overzicht van alle opleidingen van Hogeschool Rotterdam.</p>
+				<a href="#">
+					<p>Een overzicht van alle opleidingen van Hogeschool Rotterdam.</p>
+				</a>
 				<a href="#">Bekijk alle opleidingen</a>
+				<img src="images/onzeopleidingen.jpg" alt="">
 			</article>
 		</section>
-		<h7>Onderwijstypes</h7>
-		<p>Kies je voor een tweejarige Associate degree, voor een reguliere vierjarige bachelor of voor een hbo
-			masterprogramma?</p>
-		<ul>
-			<li>
-				<a href="./index.html">Associate degree</a>
-			</li>
-			<li>
-				<a href="./index.html">Bachelor</a>
-			</li>
-			<li>
-				<a href="./index.html">Master</a>
-			</li>
-			<li>
-				<a href="./index.html">Post hbo trainingen</a>
-			</li>
-		</ul>
-		<h8>Onderwijsvormen</h8>
-		<p>Bij voltijd ga je de gehele werkweek naar school. Deeltijd studeren doe je meestal naast je werk. Duaal staat
-			ook wel bekend als werken en leren.</p>
-		<ul>
-			<li>
-				<a href="./index.html">Voltijd</a>
-			</li>
-			<li>
-				<a href="./index.html">Deeltijd</a>
-			</li>
-			<li>
-				<a href="./index.html">Duaal</a>
-			</li>
-		</ul>
-		<h8>Toekomst maken doe je samen</h8>
-		<p>Werken aan de opgaven van de Rotterdamse regio</p>
-		<p>Al lerend werk je mee aan de toekomst van de stad en de wereld om je heen. Studenten, docenten, onderzoekers
-			en de beroepspraktijk bedenken samen oplossingen. Toepasbaarheid staat centraal. We dragen bij aan vier
-			grote maatschappelijke opgaven.</p>
-		<ul>
-			<li>
-				<h3>Duurzame delta</h3>
-				<a href="./index.html">Willen we over 30 jaar niet zwemmend naar de stad, dan zullen we slim en duurzaam
-					over de toekomst van onze delta moeten nadenken.</a>
-				<a href="./index.html">Lees meer over dit thema</a>
-			</li>
-			<li>
-				<h3>Toekomstbestendige economie</h3>
-				<a href="./index.html">Wat bezitten, bestellen en vervoeren we veel spullen. Kan dat ook
-					betekenisvoller, met oog voor circulariteit?</a>
-				<a href="./index.html">Lees meer over dit thema</a>
-			</li>
-			<li>
-				<h3>Vitale gemeenschap</h3>
-				<a href="./index.html">Hoe hou je de samenleving in balans? Hoe zorg je bijvoorbeeld voor gelijke kansen
-					als het gaat om toegang tot onderwijs en zorg?</a>
-				<a href="./index.html">Lees meer over dit thema</a>
-			</li>
-			<li>
-				<h3>Slimme & sociale stad</h3>
-				<a href="./index.html">Innoveren en digitaliseren is vooruitgang! Mits iedereen mee kan komen en we
-					blijven zorgen dat de mens centraal staat.</a>
-				<a href="./index.html">Lees meer over dit thema</a>
-			</li>
-		</ul>
+		<section>
+			<h4>Onderwijstypes</h4>
+			<p>Kies je voor een tweejarige Associate degree, voor een reguliere vierjarige bachelor of voor een hbo
+				masterprogramma?</p>
+			<ul>
+				<li>
+					<a href="./index.html">Associate degree</a>
+				</li>
+				<li>
+					<a href="./index.html">Bachelor</a>
+				</li>
+				<li>
+					<a href="./index.html">Master</a>
+				</li>
+				<li>
+					<a href="./index.html">Post hbo trainingen</a>
+				</li>
+			</ul>
+			<h4>Onderwijsvormen</h4>
+			<p>Bij voltijd ga je de gehele werkweek naar school. Deeltijd studeren doe je meestal naast je werk. Duaal
+				staat
+				ook wel bekend als werken en leren.</p>
+			<ul>
+				<li>
+					<a href="./index.html">Voltijd</a>
+				</li>
+				<li>
+					<a href="./index.html">Deeltijd</a>
+				</li>
+				<li>
+					<a href="./index.html">Duaal</a>
+				</li>
+			</ul>
+		</section>
+		<section>
+			<article>
+				<h4>Toekomst maken doe je samen</h4>
+				<p>Werken aan de opgaven van de Rotterdamse regio</p>
+				<p>Al lerend werk je mee aan de toekomst van de stad en de wereld om je heen. Studenten, docenten,
+					onderzoekers
+					en de beroepspraktijk bedenken samen oplossingen. Toepasbaarheid staat centraal. We dragen bij aan vier
+					grote maatschappelijke opgaven.</p>
+			</article>		
+			<ul>
+				<li>
+					<a href="#">
+						<img src="images/duurzamedelta.png" alt="">
+						<h4>Duurzame delta</h4>
+						<p>Willen we over 30 jaar niet zwemmend naar de stad, dan zullen we slim en
+							duurzaam
+							over de toekomst van onze delta moeten nadenken.</p>
+					</a>
+					<a href="#">Lees meer over dit thema</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/toekomsbestendigeeconomie.jpg" alt="">
+						<h4>Toekomstbestendige economie</h4>
+						<p>Wat bezitten, bestellen en vervoeren we veel spullen. Kan dat ook
+							betekenisvoller, met oog voor circulariteit?</p>
+					</a>
+					<a href="#">Lees meer over dit thema</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/vitalegemeenschap.jpg" alt="">
+						<h4>Vitale gemeenschap</h4>
+						<p>Hoe hou je de samenleving in balans? Hoe zorg je bijvoorbeeld voor gelijke
+							kansen
+							als het gaat om toegang tot onderwijs en zorg?</p>
+					</a>
+					<a href="#">Lees meer over dit thema</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/slimmesocialestad.jpg" alt="">
+						<h4>Slimme & sociale stad</h4>
+						<p>Innoveren en digitaliseren is vooruitgang! Mits iedereen mee kan komen en we
+							blijven zorgen dat de mens centraal staat.</p>
+					</a>
+					<a href="#">Lees meer over dit thema</a>
+
+				</li>
+			</ul>
+		</section>
 		<h4>Nieuws</h4>
 		<p>Een overzicht van het laatste nieuws</p>
 		<ul>
@@ -217,8 +289,12 @@
 				<p>Je bent welkom</p>
 			</article>
 			<article>
-				<p>Samenwerken met Hogeschool Rotterdam</p>
-				<p>Stages en afstudeeronderzoek</p>
+				<p>
+					Samenwerken met Hogeschool Rotterdam
+				</p>
+				<p>
+					Stages en afstudeeronderzoek
+				</p>
 			</article>
 		</section>
 
@@ -233,9 +309,12 @@
 				<li>Leveranciers</li>
 			</ul>
 		</section>
-		<p>Toekomstmakers</p>
-		<p>2025 Hogeschool Rotterdam. Alle rechten voorbehouden.</p>
-
+		<p>
+			Toekomstmakers
+		</p>
+		<p>
+			2025 Hogeschool Rotterdam. Alle rechten voorbehouden.
+		</p>
 	</footer>
 	<script defer src="scripts/script.js"></script>
 </body>

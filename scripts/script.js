@@ -5,7 +5,7 @@ console.log("hi");
 /* menu openen de MENU button */
 /******************************/
 
-let menuOpenButton = document.querySelector("header nav ul li button");
+let menuOpenButton = document.querySelector("header > button");
 
 menuOpenButton.addEventListener("click", openMenu);
 

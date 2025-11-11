@@ -1,0 +1,97 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	color-scheme:light dark;
+	--color-text: #111;
+	--color-background: #eee;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+	  --textkleur:#f2f2f2;
+	  --wit:#0c0c12;
+	  --lichtblauw:#4bbce0;
+	  --superlichtblauw:#0b1c27;
+	  --donkerblauw:#7aa3ff;
+	  --footerEerste:#0e2d38;
+	  --footerTweede:#1a3b18;
+	  --geel:#e0a50c;
+	  --textdonkerblauw:#9bb9ff;
+	  --achtergronddonkerblauw:#0a0830;
+	  --grijs:#bfbfbf;
+	  --oranje: #ff8527;
+	}
+  } 
+
+  a:focus {
+	border: var(--oranje) 4px solid;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: url('../fonts/poppins-v20-latin-300.woff2') format('woff2');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PoppinsItalic';
+	src: url('../fonts/poppins-v20-latin-300italic.woff2') format('woff2');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PoppinsLatin';
+	src: url('../fonts/poppins-v20-latin-500.woff2') format('woff2');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PoppinsBold';
+	src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2');
+	font-weight: 600;
+	font-style: normal;
+}
+
+header {
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	top: 0;
+	z-index: 100;
+}
+
+h1 {
+	border: white;
+	border-radius: 0.5em;
+	font-family: 'PoppinsBold', sans-serif;
+	position: absolute;
+	width: 0.0625em;
+	height: 0.0625em;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	white-space: nowrap;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}

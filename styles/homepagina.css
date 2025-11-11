@@ -1,0 +1,757 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	color-scheme: light dark;
+	--color-text: #111;
+	--color-background: #f7efe3;
+	--marineblauw: #0a3140;
+	--rood: #d3104c;
+	--wit: #ffffff;
+	--grijs: #696969;
+	--oranje: #ff8527;
+	--rodehover: #680a26;
+}
+
+/* focus-state op de gehele pagina */
+a:focus {
+	border: var(--oranje) 4px solid;
+}
+
+@media (min-width: 64em) {}
+
+body {
+	background-color: #f7efe3;
+	font-family: 'Poppins', sans-serif;
+	/* display: block; */
+}
+
+main {
+	position: relative;
+}
+
+/* h1 verstoppen, screenreader leest het nog wel maar het is niet te zien op de webpagina */
+
+
+
+/* section:nth-of-type(1) h2:nth-of-type(1) {
+	color: #003340;
+	font-weight: 400;
+} */
+
+/* navigatie, hamburger menu */
+
+nav ul li {
+	margin: 20%;
+	text-transform: uppercase;
+	list-style-type: none;
+	content: "▾";
+
+}
+
+nav ul li a {
+	color: var(--grijs);
+	text-decoration: none;
+	font-style: bold;
+	font-size: 1.5rem;
+}
+
+header>button {
+	order: -1;
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	translate: -100%;
+	transition: 0.2s;
+	background-color: white;
+}
+
+/* als menu open is */
+nav.is-open {
+	translate: 0%;
+}
+
+@media (min-width:38em) {
+	header>button {
+
+		display: none;
+
+	}
+
+	nav {
+
+		position: static;
+		translate: 0;
+
+		background: none;
+	}
+
+	nav button {
+
+		display: none;
+
+	}
+
+	nav ul {
+
+		display: flex;
+		gap: 1em;
+
+	}
+
+	nav a {
+		font-family: 'PoppinsBold', sans-serif;
+		font-size: 2em;
+		border: none;
+		flex-direction: column;
+	}
+
+	header>a:last-of-type {
+
+		flex-direction: column;
+
+	}
+}
+
+
+
+/****************************************************************/
+/* styling voor de header als de browser minimaal 57em breed is */
+/****************************************************************/
+@media (min-width:57em) {
+
+	header>a:last-of-type,
+	nav a {
+		/* JOUW CODE HIER - stap 10 */
+		font-family: 'PoppinsBold', sans-serif;
+		font-size: 2em;
+		color: var(--rood);
+		flex-direction: row;
+		background-color: var(--color-whitefont);
+	}
+}
+
+/*  
+main section h2 {
+	position: relative;
+	
+  }
+  
+main section h2 {
+	position: absolute;
+	bottom: 1rem;
+	left: 1rem;
+	right: 1rem;
+	
+  }
+*/
+
+@media (min-width: 38em) {}
+
+@media (min-width: 54em) {}
+
+/* eerste grid blokje? */
+
+body > a:first-of-type {
+    background-color: white;
+    color: var(--rood);
+    z-index: 999;
+}
+
+body > a:first-of-type:hover {
+	color:var(--rodehover)
+}
+
+@media (min-width: 38em) {}
+
+/* main {
+	/* display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) ); 
+  	grid-auto-flow: dense;
+	flex-direction: column;
+	gap: 1.5rem;
+	padding: 1rem; */
+	/* object-fit: cover; */
+	/* display: grid; */
+	/* padding: 1.5em; */
+/* } */
+
+/* main section img {
+	position: relative;
+} */
+
+main>a {
+	display: inline-block;
+	background-color: var(--rood);
+	padding: 1.5em;
+	font-size: 1.125rem;
+	border-top-right-radius: 1em;
+	position: relative;
+  	bottom: 1rem;
+  	left: 1rem;
+  	right: 1rem;
+	content: ">";
+	text-decoration: none;
+	font-size: 1em;
+	color: var(--wit);
+}
+
+/* main>a:hover {
+	color: var(--rodehover);
+} */
+
+/* main>a:first-child::after {
+	content: "v";
+} */
+
+/* main section {
+	margin: 1em;
+	padding: 1em;
+	color: #fff;
+} */
+
+/* foto carousel bovenaan de eerste pagina */
+
+main section:nth-of-type(1) {
+	background-image: url(../images/header1hogeschoolrotterdam.jpg);
+	/* width: 150px;
+	height: 170px; */
+	display: block;
+	width: 100%;
+	height: 50%;
+	flex-direction: row;
+	position: relative;
+	/* object-fit: cover; */
+	background-repeat: no-repeat;
+	/* background-size: cover; */
+	height: 20em;
+	/* overflow-clip-margin: content-box;
+    overflow: clip; */
+}
+
+main section:nth-of-type(1) h2:nth-of-type(1) {
+	position: absolute;
+	bottom: 1rem;
+	left: 1rem;
+	right: 1rem;
+	background-color: var(--color-background);
+	color: var(--marineblauw);
+	font-family: 'PoppinsBold', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 2.5em;
+	border-top-right-radius: 0.7em;
+	padding: 0.3em;
+}
+
+/* main section:nth-of-type(1) p:nth-of-type(1) {
+	font-family: 'PoppinsLatin', sans-serif;
+	color: var(--marineblauw);
+}
+
+main section:nth-of-type(1) {
+	font-family: 'PoppinsBold', sans-serif;
+	color: var(--marineblauw);
+	text-decoration: none;
+} */
+
+/* main section:nth-of-type(1) a:nth-of-type(1):hover {
+	color: var(--rood);
+} */
+
+/* EERSTE GRID */
+
+main section:nth-of-type(2) {
+	display: grid;
+	/* position: static; */
+	background-color: var(--wit);
+	border-bottom-right-radius: 1em;
+	padding-top: 0.05em;
+	padding-right: 1em;
+	padding-left: 1em;
+	padding-bottom: 1em;
+	/* gap: 2em; */
+}
+
+main section:nth-of-type(2) h2:nth-of-type(2) {
+	font-family: 'PoppinsBold', sans-serif;
+	font-weight: 600;
+
+}
+
+main section:nth-of-type(3) {
+	display: grid;
+	/* position: relative; */
+	background-color: var(--rood);
+	border-bottom-right-radius: 1em;
+	padding-top: 0.05em;
+	padding-right: 1em;
+	padding-left: 1em;
+	padding-bottom: 1em;
+	/* gap: 2em; */
+}
+
+main section:nth-of-type(4) {
+	display: grid;
+	background-color: var(--marineblauw);
+	border-bottom-right-radius: 1em;
+	padding-top: 0.05em;
+	padding-right: 1em;
+	padding-left: 1em;
+	padding-bottom: 1em;
+}
+
+/* STYLING TWEEDE GRID */
+
+main section:nth-of-type(5) {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 1em;
+}
+
+main section:nth-of-type(5) article {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+  	grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+	grid-auto-flow: dense;
+	appearance: none;
+	text-shadow: var(--color-text);
+}
+
+
+main section:nth-of-type(5) article {
+	border-bottom-right-radius: 1.5em;
+	position: relative;
+	justify-content: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 15em;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+}
+
+main section:nth-of-type(5) article:first-of-type {
+	background-image: url(../images/bekijkonzeopleidingen.jpg);
+}
+
+
+
+main section:nth-of-type(5) article:nth-of-type(2) {
+	background-image: url(../images/ontdekonzelocaties.jpg);
+}
+
+main section:nth-of-type(5) article:nth-of-type(3) {
+	background-image: 
+		linear-gradient(transparent, rgb(0 0 0 / .8)),
+		url(../images/studerenbijrotterdam.jpg);
+}
+
+
+main section:nth-of-type(5) article:nth-of-type(4) {
+	background-image: url(../images/studereninrotterdam.jpg);
+	border-bottom-right-radius: 1.5em;
+}
+
+main section:nth-of-type(5) > article>a {
+	text-decoration: none;
+}
+
+main section:nth-of-type(5) article h3 {
+	color:var(--wit);
+	align-items: center;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.8em;
+	position: absolute;
+  	bottom: 1rem;
+  	left: 1rem;
+  	right: 1rem;
+}
+
+
+
+
+
+
+/* Tekststructuur binnen secties */
+/* section h2 {
+	font-size: 1.3rem;
+	margin-bottom: 0.5rem;
+}
+
+section p {
+	margin-bottom: 1rem;
+	line-height: 1.5;
+}
+
+/* Links (knoppenstijl) */
+/* section a {
+	font-weight: bold;
+	text-decoration: none;
+	color:var(--color-text);
+	border-bottom: 2px solid currentColor;
+	display: flex;
+	align-items: center;
+	gap: 0.3em;
+}
+
+section a::after {
+	content: "›";
+	font-size: 1.2em;
+} */ 
+
+/* Speciale knop bij Toekomstmakers */
+/* section:nth-of-type(4) button {
+	background-color: #fff;
+	color: #0a3140;
+	font-weight: bold;
+	padding: 0.5rem 1rem;
+	border: none;
+	border-radius: 0.5rem;
+}
+
+section:nth-of-type(4) button:hover {
+	background-color: #e6e6e6;
+} */
+
+/* main > section:nth-of-type(1) {
+	font-family: 'Poppins', sans-serif;
+	border-color: white;
+	border-radius: 1em;
+}
+
+main section:nth-of-type(2) {
+	display: grid;
+	inset: 5 5 5 5;
+	background-color: white;
+}
+
+main section:nth-of-type(3),
+a {
+	background-color: #d3104c;
+	inline-size: 70%;
+}
+
+section article:nth-of-type(2) h3 {
+	position: relative;
+} */
+
+
+/* main section:nth-of-type(2) h2:nth-of-type(2) {
+	position: absolute;
+	font-size: 1.8em;
+	font-weight: 400;
+	color: var(--marineblauw);
+	font-family: 'PoppinsBold', sans-serif;
+	gap: 2em;
+}
+main section:nth-of-type(3) h2:nth-of-type(3) {
+	font-size: 1.8em;
+	font-weight: 400;
+	color: var(--wit);
+	font-family: 'PoppinsBold', sans-serif;
+} */
+
+
+
+main section:nth-of-type(2) article:nth-of-type(1) {
+	position: relative;
+	background-image: url(../images/bekijkonzeopleidingen.jpg);
+}
+
+
+
+
+main section:nth-of-type(6) article:nth-of-type(1) h3 {
+	position: absolute;
+	align-items: center;
+	font-family: 'PoppinsBold', sans-serif;
+	font-size: 1.5em;
+}
+
+main section:nth-of-type(6) article:nth-of-type(2) {
+	position: relative;
+}
+
+main section:nth-of-type(6) article:nth-of-type(2) h3 {
+	position: absolute;
+	align-items: center;
+	/* font-family: 'PoppinsBold', sans-serif; */
+	font-size: 1.5em;
+}
+
+main section:nth-of-type(6) article:nth-of-type(3) {
+	position: relative;
+}
+
+main section:nth-of-type(6) article:nth-of-type(3) h3 {
+	position: absolute;
+	align-items: center;
+	font-family: 'PoppinsBold', sans-serif;
+	font-size: 1.5em;
+}
+
+main section:nth-of-type(6) article:nth-of-type(4) {
+	position: relative;
+}
+
+main section:nth-of-type(6) article:nth-of-type(4) h3 {
+	position: absolute;
+	align-items: center;
+	font-family: 'PoppinsBold', sans-serif;
+	font-size: 1.5em;
+}
+
+main section:nth-of-type(6) {
+	color: var(--marineblauw);
+	display: grid;
+	gap:2em;
+}
+
+main section:nth-of-type(6) h4 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	font-size: 1.6875rem;
+	display: grid;
+	line-height: 2.313em;
+	padding:0;
+	margin-bottom: 0;
+}
+
+main section:nth-of-type(6) article {
+	background-color: var(--wit);
+	display: inline-block;
+
+}
+
+main section:nth-of-type(6) article {
+	/* background-image: url(../images/opendag.jpg); */
+	/* background-repeat: no-repeat; */
+
+	display: grid;
+	grid-template-rows:25vw repeat(4, max-content) 2em;
+	grid-template-columns: 2em 1fr 2em;
+
+	background-color: var(--wit);
+	border-bottom-right-radius: 2em;
+}
+
+main section:nth-of-type(6) article h5 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-style: bold;
+	font-size: 2em;
+
+	grid-column-start: 2;
+
+	margin: 2rem 0 0 0;
+}
+
+main section:nth-of-type(6) article p {
+	grid-column-start: 2;
+	margin:.5rem 0;
+	color: var(--color-text);
+}
+
+main section:nth-of-type(6) article a {
+	grid-column-start: 2;
+	color: var(--rood);
+	text-decoration: none;
+	position: relative;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	font-size: 1.2em;
+	padding: 1rem;
+	transition: .5s;
+}
+
+main section:nth-of-type(6) article a:nth-of-type(2)::after {
+	content: ">";
+	position: absolute;
+	margin-left: .5rem;
+	transition: .5s;
+	font-style: bold;
+}
+
+main section:nth-of-type(6) article a:nth-of-type(2):hover {
+	color: var(--rodehover);
+}
+
+main section:nth-of-type(6) article a:nth-of-type(2):hover::after {
+	margin-left: 1rem;
+}
+
+main section:nth-of-type(6) article img {
+	order: -1;
+	width:100%;
+	height:100%;
+	object-fit: cover;
+
+	grid-column-start:1;
+	grid-column-end:-1;
+}
+
+
+
+main section:nth-of-type(6) article:nth-of-type(2) {
+	/* background-image: url(../images/proefstuderen.jpg); */
+	background-repeat: no-repeat;
+}
+
+main section:nth-of-type(6) article:nth-of-type(2) h5 {
+	font-family: 'Poppins', sans-serif;
+	font-style: bold;
+	font-size: 2em;
+}
+
+main section:nth-of-type(6) article:nth-of-type(3) {
+	/* background-image: url(../images/onzeopleidingen.jpg); */
+	background-repeat: no-repeat;
+}
+
+main section:nth-of-type(6) article:nth-of-type(3) h5 {
+	font-family: 'Poppins', sans-serif;
+	font-style: bold;
+	font-size: 2em;
+}
+
+main section:nth-of-type(7) h4 {
+	color: var(--color-text);
+	font-family: 'Poppins', sans-serif;
+	font-size: 2em;
+	font-weight: 600;
+}
+
+main section:nth-of-type(7) ul {
+	color: var(--color-text);
+	text-decoration: var(--rood);
+}
+
+/* 2e section met foto's */
+
+main section:nth-of-type(8) {
+	gap: 2em;
+}
+
+main section:nth-of-type(8) ul {
+	text-decoration: none;
+}
+
+main section:nth-of-type(8) li {
+	text-decoration: none;
+	gap: 2em;
+	grid-template-rows:25vw repeat(4, max-content) 2em;
+	grid-template-columns: 2em 1fr 2em;
+	padding: 1.5em;
+	background-color: var(--wit);
+	border-bottom-right-radius: 2em;
+}
+
+main section:nth-of-type(8) ul li a {
+	text-decoration: none;
+	color: var(--color-text);
+	gap: 2em;
+}
+
+main section:nth-of-type(8) ul li a h4 {
+	font-family: 'Poppins', sans-serif;
+	font-style: bold;
+	/* font-weight: 600; */
+	font-size: 1.5rem;
+	color: var(--marineblauw);
+	
+}
+
+main section:nth-of-type(8) ul li a:hover {
+	color: var(--rood);
+	transition: .3s;
+	text-decoration: none;
+	appearance: none;
+}
+
+main section:nth-of-type(8) ul li a:nth-of-type(2) {
+	font-size: 1.5em;
+	font-family: 'PoppinsBold', sans-serif;
+	color: var(--rood);
+	position: relative;
+	transition: .5s;
+}
+
+main section:nth-of-type(8) ul li a:nth-of-type(2)::after {
+	font-size: 1.5em;
+	font-family: 'PoppinsBold', sans-serif;
+	color: var(--rood);
+	content: ">";
+	position: absolute;
+	padding: 1rem;
+	margin-left: .5rem;
+	transition: .5s;
+}
+
+main section:nth-of-type(8) li img {
+	order: -1;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	grid-column-start:1;
+	grid-column-end:-1;
+	/* position: absolute; */
+}
+
+main section:nth-of-type(8) li:first-of-type {
+	/* background-image: url(../images/duurzamedelta.png); */
+	background-repeat: no-repeat;
+}
+
+main section:nth-of-type(8) li:nth-of-type(2) {
+	/* background-image: url(../images/toekomsbestendigeeconomie.jpg); */
+	background-repeat: no-repeat;
+}
+
+main section:nth-of-type(8) li:nth-of-type(3) {
+	/* background-image: url(../images/vitalegemeenschap.jpg); */
+	background-repeat: no-repeat;
+}
+
+main section:nth-of-type(8) li:nth-of-type(4) {
+	/* background-image: url(../images/slimmesocialestad.jpg); */
+	background-repeat: no-repeat;
+}
+
+p* {
+	color: var(--color-text);
+}
+
+h4* {
+	color: var(--color-text);
+}
+
+
+
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+/* jouw code */

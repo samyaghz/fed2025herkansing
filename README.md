@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Blauw
 
   #### Je focus:
-  Ik wil mij focussen op de surface plane.
+  Ik wil mij focussen op responsiveness.
  
 </details>
 
@@ -224,10 +224,10 @@ Bener:
   6.⁠ ⁠Icoontjes in footer. Hover, linkjes, svg?
   
   Zineb:
-  - Waarom zie ik niet alle html elementen van mijn footer?
-  - Klopt mijn css hyrargie: common, index en testrit
-  - Hoe kan ik de kleur van mijn iconen aanpassen 
-  - Ik heb in mijn navigatie a gebruikt ipv buttons. Kan ik dit in javascript makkelijk gebruiken, omdat het dus niet echt wordt gelinkt naar een pagina maar op de pagina blijft.
+  1. Waarom zie ik niet alle html elementen van mijn footer?
+  2. Klopt mijn css hyrargie: common, index en testrit
+  3. Hoe kan ik de kleur van mijn iconen aanpassen 
+  4. Ik heb in mijn navigatie a gebruikt ipv buttons. Kan ik dit in javascript makkelijk gebruiken, omdat het dus niet echt wordt gelinkt naar een pagina maar op de pagina blijft.
   
   Kanokphon:
   1.⁠ ⁠Hoe kan ik in 1x dark mode via root coderen?
