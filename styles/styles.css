@@ -17,12 +17,18 @@
 /*********************/
 :root {
 	/* startje */
-	color-scheme:light dark;
+	color-scheme: light dark;
 	--color-text: #111;
-	--color-background: #eee;
+	--color-background: #f7efe3;
+	--marineblauw: #0a3140;
+	--rood: #d3104c;
+	--wit: #ffffff;
+	--grijs: #696969;
+	--oranje: #ff8527;
+	--rodehover: #680a26;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
 	:root {
 	  --textkleur:#f2f2f2;
 	  --wit:#0c0c12;
@@ -37,7 +43,7 @@
 	  --grijs:#bfbfbf;
 	  --oranje: #ff8527;
 	}
-  } 
+  }  */
 
   a:focus {
 	border: var(--oranje) 4px solid;
@@ -79,6 +85,10 @@ header {
 	position: relative;
 	top: 0;
 	z-index: 100;
+}
+
+body {
+	background-color: var(--color-background);
 }
 
 h1 {
