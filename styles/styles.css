@@ -91,6 +91,10 @@ body {
 	background-color: var(--color-background);
 }
 
+a:focus {
+	border: var(--oranje) 4px solid;
+}
+
 h1 {
 	border: white;
 	border-radius: 0.5em;
@@ -104,4 +108,20 @@ h1 {
 	border: 0;
 	margin: 0;
 	padding: 0;
+}
+
+footer {
+	background-color: var(--wit);
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+}
+
+footer, ul:nth-of-type(3) li, a {
+	text-decoration: none;
+	list-style-type: none;
+	width: 100%;
+	height: 100%;
 }
