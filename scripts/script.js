@@ -30,3 +30,7 @@ function sluitMenu() {
   let deNav = document.querySelector("nav");
   deNav.classList.remove("is-open");
 }
+
+/******************************/
+/* microinteractie */
+/******************************/

@@ -33,6 +33,7 @@ a:focus {
 	border: var(--oranje) 4px solid;
 }
 
+/* media querie voor groter scherm */
 @media (min-width: 64em) {}
 
 body {
@@ -45,7 +46,7 @@ main {
 	position: relative;
 }
 
-/* h1 verstoppen, screenreader leest het nog wel maar het is niet te zien op de webpagina */
+
 
 
 
@@ -142,7 +143,6 @@ nav.is-open {
 
 	header>a:last-of-type,
 	nav a {
-		/* JOUW CODE HIER - stap 10 */
 		font-family: 'PoppinsBold', sans-serif;
 		font-size: 2em;
 		color: var(--rood);
@@ -231,26 +231,36 @@ main>a {
 	color: #fff;
 } */
 
+
+
+/**************/
 /* foto carousel bovenaan de eerste pagina */
+/**************/
 
 main section:nth-of-type(1) {
-	background-image: url(../images/header1hogeschoolrotterdam.jpg);
+	position: relative;
+}
+
+main section:nth-of-type(1) img {
+	/* background-image: url(../images/header1hogeschoolrotterdam.jpg); */
 	/* width: 150px;
 	height: 170px; */
-	display: block;
-	width: 100%;
+	/* display: block; */
+	width: 50%;
 	height: 50%;
-	flex-direction: row;
+	/* max-width: fit-content;
+	max-height: fit-content; */
+	order: -1;
+	/* flex-direction: row; */
 	position: relative;
 	/* object-fit: cover; */
 	background-repeat: no-repeat;
 	/* background-size: cover; */
-	height: 20em;
 	/* overflow-clip-margin: content-box;
     overflow: clip; */
 }
 
-main section:nth-of-type(1) h2:nth-of-type(1) {
+main section:first-of-type h2:first-of-type {
 	position: absolute;
 	bottom: 1rem;
 	left: 1rem;
@@ -263,6 +273,7 @@ main section:nth-of-type(1) h2:nth-of-type(1) {
 	font-size: 2.5em;
 	border-top-right-radius: 0.7em;
 	padding: 0.3em;
+	z-index: 999;
 }
 
 /* main section:nth-of-type(1) p:nth-of-type(1) {
@@ -280,8 +291,10 @@ main section:nth-of-type(1) {
 	color: var(--rood);
 } */
 
-/* EERSTE GRID */
 
+/**************/
+/* EERSTE GRID */
+/**************/
 main section:nth-of-type(2) {
 	display: grid;
 	/* position: static; */
@@ -322,8 +335,9 @@ main section:nth-of-type(4) {
 	padding-bottom: 1em;
 }
 
+/****************/
 /* STYLING TWEEDE GRID */
-
+/****************/
 main section:nth-of-type(5) {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -651,11 +665,15 @@ main section:nth-of-type(7) ul {
 	text-decoration: var(--rood);
 }
 
-/* 2e section met foto's */
+/****************/
+/* 2e sectie met foto's */
+/****************/
 
 main section:nth-of-type(8) {
 	gap: 2em;
 	display: grid;
+	margin: 0;
+	padding: 0;
 }
 
 main section:nth-of-type(8) ul {
@@ -663,6 +681,7 @@ main section:nth-of-type(8) ul {
 	position: relative;
 	justify-content: space-between;
 	gap: 2em;
+	margin: 0;
 }
 
 main section:nth-of-type(8) li {
@@ -729,11 +748,12 @@ main section:nth-of-type(8) li img {
 	grid-column-end:-1;
 	justify-items: stretch;
 }
-
 /* einde 2e section */
 
-/* start nieuws sectie */
 
+/****************/
+/* foto sectie aan het einde van de pagina */
+/****************/
 main section:nth-of-type(9) {
 	font-family: 'Poppins';
 	/* display: grid; */
@@ -769,7 +789,8 @@ main section:nth-of-type(9) article a {
 }
 
 main section:nth-of-type(9) article p:nth-of-type(1) {
-	font-size: 1.668rem;
+	font-size: 1.660rem;
+	font-family: 'Poppins', sans-serif;
 	font-style: bold;
 	color:var(--wit);
 	position: absolute;
@@ -792,7 +813,26 @@ main section:nth-of-type(9) article p:nth-of-type(2) {
 	/* gap: 2em; */
 	margin-left: 2rem;
 	margin-top: 10rem;
-	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 4px 10px var(--color-text);
+}
+
+/****************/
+/* NIEUWS SECTIE */
+/****************/
+main article h4 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.8rem;
+}
+
+/* main article p {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.3rem;
+	background-color: var(--wit);
+	padding: 1.6rem
+} */
+
+main ul:nth-of-type(4) li p {
+	list-style-type: none;
 }
 
 p* {
