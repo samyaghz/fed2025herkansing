@@ -33,6 +33,11 @@ a:focus {
 	border: var(--oranje) 4px solid;
 }
 
+* {
+	margin: 0;
+	padding: 0;
+}
+
 /* media querie voor groter scherm */
 @media (min-width: 64em) {}
 
@@ -492,6 +497,7 @@ main section:nth-of-type(3) h2:nth-of-type(3) {
 
 
 
+/* STYLING DERDE GRID */
 main section:nth-of-type(2) article:nth-of-type(1) {
 	position: relative;
 	background-image: url(../images/bekijkonzeopleidingen.jpg);

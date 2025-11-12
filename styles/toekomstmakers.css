@@ -4,6 +4,11 @@
 	box-sizing: border-box;
 }
 
+* {
+	margin: 0;
+	padding:0;
+}
+
 
 
 
@@ -14,9 +19,142 @@
 /*********************/
 :root {
 	/* startje */
+	color-scheme: light dark;
 	--color-text: #111;
-	--color-background: #eee;
+	--color-background: #f7efe3;
+	--marineblauw: #0a3140;
+	--rood: #d3104c;
+	--wit: #ffffff;
+	--grijs: #696969;
+	--oranje: #ff8527;
+	--rodehover: #680a26;
 }
 
 
+/*********************/
+/* de 2 articles net onderaan de pagina  */
+/*********************/
+main section:nth-of-type(7) {
+	display: grid;
+	gap: 2em;
+	/* position: relative; */
+	overflow: hidden;
+}
 
+main section:nth-of-type(7) h2 {
+	font-family: 'PoppinsBold', sans-serif;
+	font-size: 1.6875rem;
+	color: var(--marineblauw);
+}
+
+main section:nth-of-type(7) p {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+	font-size: 1.2em;
+	background-color: var(--wit);
+	color: var(--marineblauw);
+	display: inline-block;
+	padding: 1rem;
+	border-bottom-left-radius: 1.8rem;
+}
+
+main section:nth-of-type(7) article {
+	background-color: var(--wit);
+	position: relative;
+	border-bottom-right-radius: 2rem;
+	padding-top:0;
+	padding-left:0;
+	padding-right: 0;
+	padding-bottom: 1.5rem;
+	gap: 2em;
+}
+
+main section:nth-of-type(7) article h3 {
+	font-family: 'PoppinsBold', sans-serif;
+	text-decoration: none;
+	line-height: 1.25;
+	font-size: 1.6rem;
+	color: var(--marineblauw);
+	padding: 1.2rem;
+	margin-top: 1.5rem;
+	margin-bottom: 0.8rem;
+}
+
+main section:nth-of-type(7) article p {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.3rem;
+	text-decoration: none;
+	color: var(--marineblauw);
+	padding: 1rem;
+}
+
+main section:nth-of-type(7) article p:hover {
+	color: var(--rood);
+	transition: .2s;
+}
+
+main section:nth-of-type(7) article img {
+	width: 100%;
+	height: auto;
+	display: block;
+	object-fit: cover;
+}
+/*********************/
+/* einde code van de 2 articles */
+/*********************/
+
+
+/*********************/
+/* STUDEREN IN ROTTERDAM start */
+/*********************/
+
+/* styling h2 */
+main article h2 {
+	font-family: 'PoppinsBold', sans-serif;
+	font-size: 1.6875rem;
+	color: var(--marineblauw);
+	margin-top: 1rem;
+}
+
+/* styling van de p onder de h2 */
+main article p:first-of-type {
+	font-family:'Poppins', sans-serif;
+	background-color: var(--wit);
+}
+
+/* styling tweede p */
+main article p:nth-of-type(2) {
+	font-family: 'Poppins', sans-serif;
+}
+
+/* Styling img in de article */
+main article img {
+	width: 100%;
+	height: 100%;
+	border-bottom-right-radius: 1.8em;
+}
+
+/* Styling linkjes onder de tekst */
+main article a {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.2rem;
+	background-color: var(--rood);
+	color: var(--wit);
+	padding: 1.2rem;
+}
+
+/* animatie van het pijltje in de link */
+main article a::after {
+	content:">";
+	margin-left: .5rem;
+}
+
+main article a::after:hover {
+	margin-left: 1rem;
+	transition: .5s;
+}
+
+main article a:hover {
+	background-color: var(--rodehover);
+	transition: .5s;
+}
