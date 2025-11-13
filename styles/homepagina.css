@@ -311,6 +311,8 @@ main section:nth-of-type(2) {
 	padding-left: 1em;
 	padding-bottom: 1em;
 	/* gap: 2em; */
+	gap: 2em;
+	margin:0;
 }
 
 main section:nth-of-type(2) h2:nth-of-type(2) {
@@ -324,21 +326,29 @@ main section:nth-of-type(3) {
 	/* position: relative; */
 	background-color: var(--rood);
 	border-bottom-right-radius: 1em;
-	padding-top: 0.05em;
+	/* padding-top: 0.05em;
 	padding-right: 1em;
 	padding-left: 1em;
-	padding-bottom: 1em;
+	padding-bottom: 1em; */
 	/* gap: 2em; */
+	
+	gap:2em;
+	margin: 0;
+	padding: 1.3rem;
+
 }
 
 main section:nth-of-type(4) {
 	display: grid;
 	background-color: var(--marineblauw);
 	border-bottom-right-radius: 1em;
-	padding-top: 0.05em;
+	/* padding-top: 0.05em;
 	padding-right: 1em;
 	padding-left: 1em;
-	padding-bottom: 1em;
+	padding-bottom: 1em; */
+	margin: 0;
+	gap: 2em;
+	padding: 1.3rem;
 }
 
 /****************/
@@ -830,9 +840,8 @@ main section:nth-of-type(8) ul li a:hover p:last-of-type::after {
 	padding-left: 0.5rem;
 	color: var(--rodehover);
 }
-
-
 /* einde 2e section */
+
 
 
 /****************/
@@ -961,7 +970,8 @@ main article ul a:nth-of-type(4) {
 	color: var(--rood);
 	font-family: 'PoppinsBold', sans-serif;
 	margin: 0;
-	font-size: 1.2rem;
+	font-size: 1.4rem;
+	margin-left: .5rem;
 }
 
 main article ul a:nth-of-type(4):hover {
@@ -986,6 +996,85 @@ main article ul a:nth-of-type(4)::after {
 main ul:nth-of-type(4) li p {
 	list-style-type: none;
 
+}
+
+/****************/
+/* EERSTE GRID SECTION */
+/****************/
+
+
+
+
+/****************/
+/* LIJSTJE LINKS */
+/****************/
+
+main section:nth-of-type(7) h4 {
+	font-family: 'PoppinsBold', sans-serif;
+	color: var(--marineblauw);
+	margin: .5rem;
+}
+
+main section:nth-of-type(7) p {
+	font-size: 1.3rem;
+	margin: .5rem;
+	color: var(--marineblauw);
+}
+
+main section:nth-of-type(7) ul {
+	margin: 1rem;
+}
+
+main section:nth-of-type(7) li{
+	list-style-type: none;
+}
+
+main section:nth-of-type(7) li::before {
+	content:"·";
+	vertical-align:middle;
+	font-size: 4em;
+	color:var(--rood);
+	margin: 0;
+	padding: 0;
+	line-height: 1.25em;
+}
+
+
+
+main section:nth-of-type(7) li a {
+	text-decoration: var(--rood);
+	color:var(--marineblauw);
+	font-size: 1.2rem;
+	/* padding: .5rem; */
+	padding-top: .7rem;
+	border-bottom: .1rem solid var(--rood);
+}
+
+main section:nth-of-type(7) li a:hover {
+	color: var(--rood);
+	transition: .3s;
+}
+
+main section:nth-of-type(8) article h4 {
+	font-size: 2em;
+	font-family: 'PoppinsBold', sans-serif;
+	color: var(--marineblauw);
+	margin: .5rem;
+}
+
+main section:nth-of-type(8) article p:first-of-type {
+	background-color: var(--wit);
+	font-size: 1.3rem;
+	border-bottom-left-radius: 1.8em;
+	padding: 1.2rem;
+	align-items: center;
+	display: block;
+}
+
+main section:nth-of-type(8) article p:nth-of-type(2) {
+	margin: .7rem;
+	font-size: 1.4rem;
+	color: var(--marineblauw);
 }
 
 p* {
