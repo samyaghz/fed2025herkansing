@@ -90,6 +90,7 @@ nav {
 	translate: -100%;
 	transition: 0.2s;
 	background-color: white;
+	/* z-index: 1000; */
 }
 
 /* als menu open is */
@@ -177,14 +178,14 @@ main section h2 {
 
 /* eerste grid blokje? */
 
-body > a:first-of-type {
-    background-color: white;
-    color: var(--rood);
-    z-index: 999;
+body>a:first-of-type {
+	background-color: white;
+	color: var(--rood);
+	z-index: 999;
 }
 
-body > a:first-of-type:hover {
-	color:var(--rodehover)
+body>a:first-of-type:hover {
+	color: var(--rodehover)
 }
 
 @media (min-width: 38em) {}
@@ -197,9 +198,9 @@ body > a:first-of-type:hover {
 	flex-direction: column;
 	gap: 1.5rem;
 	padding: 1rem; */
-	/* object-fit: cover; */
-	/* display: grid; */
-	/* padding: 1.5em; */
+/* object-fit: cover; */
+/* display: grid; */
+/* padding: 1.5em; */
 /* } */
 
 /* main section img {
@@ -213,9 +214,9 @@ main>a {
 	font-size: 1.125rem;
 	border-top-right-radius: 1em;
 	position: relative;
-  	bottom: 1rem;
-  	left: 1rem;
-  	right: 1rem;
+	bottom: 1rem;
+	left: 1rem;
+	right: 1rem;
 	content: ">";
 	text-decoration: none;
 	font-size: 1em;
@@ -352,7 +353,7 @@ main section:nth-of-type(5) {
 main section:nth-of-type(5) article {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
-  	grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	grid-auto-flow: dense;
 	appearance: none;
 	text-shadow: var(--color-text);
@@ -371,44 +372,44 @@ main section:nth-of-type(5) article {
 }
 
 main section:nth-of-type(5) article:first-of-type {
-	background-image: 
+	background-image:
 		linear-gradient(transparent, rgb(0 0 0 / .8)),
 		url(../images/bekijkonzeopleidingen.jpg);
 }
 
 main section:nth-of-type(5) article:nth-of-type(2) {
-	background-image: 
+	background-image:
 		linear-gradient(transparent, rgb(0 0 0 / .8)),
 		url(../images/ontdekonzelocaties.jpg);
 }
 
 main section:nth-of-type(5) article:nth-of-type(3) {
-	background-image: 
+	background-image:
 		linear-gradient(transparent, rgb(0 0 0 / .8)),
 		url(../images/studerenbijrotterdam.jpg);
 }
 
 
 main section:nth-of-type(5) article:nth-of-type(4) {
-	background-image: 
+	background-image:
 		linear-gradient(transparent, rgb(0 0 0 / .8)),
 		url(../images/studereninrotterdam.jpg);
 	border-bottom-right-radius: 1.5em;
 }
 
-main section:nth-of-type(5) > article>a {
+main section:nth-of-type(5)>article>a {
 	text-decoration: none;
 }
 
 main section:nth-of-type(5) article h3 {
-	color:var(--wit);
+	color: var(--wit);
 	align-items: center;
 	font-family: 'Poppins', sans-serif;
 	font-size: 1.8em;
 	position: absolute;
-  	bottom: 1rem;
-  	left: 1rem;
-  	right: 1rem;
+	bottom: 1rem;
+	left: 1rem;
+	right: 1rem;
 }
 
 
@@ -441,7 +442,7 @@ section p {
 section a::after {
 	content: "›";
 	font-size: 1.2em;
-} */ 
+} */
 
 /* Speciale knop bij Toekomstmakers */
 /* section:nth-of-type(4) button {
@@ -549,7 +550,7 @@ main section:nth-of-type(6) article:nth-of-type(4) h3 {
 main section:nth-of-type(6) {
 	color: var(--marineblauw);
 	display: grid;
-	gap:2em;
+	gap: 2em;
 }
 
 main section:nth-of-type(6) h4 {
@@ -558,22 +559,22 @@ main section:nth-of-type(6) h4 {
 	font-size: 1.6875rem;
 	display: grid;
 	line-height: 2.313em;
-	padding:0;
+	padding: 0;
 	margin-bottom: 0;
 }
 
-main section:nth-of-type(6) article {
+/* main section:nth-of-type(6) article {
 	background-color: var(--wit);
 	display: inline-block;
 
-}
+} */
 
 main section:nth-of-type(6) article {
 	/* background-image: url(../images/opendag.jpg); */
 	/* background-repeat: no-repeat; */
 
 	display: grid;
-	grid-template-rows:25vw repeat(4, max-content) 2em;
+	grid-template-rows: 25vw repeat(4, max-content) 2em;
 	grid-template-columns: 2em 1fr 2em;
 
 	background-color: var(--wit);
@@ -593,7 +594,7 @@ main section:nth-of-type(6) article h5 {
 
 main section:nth-of-type(6) article p {
 	grid-column-start: 2;
-	margin:.5rem 0;
+	margin: .5rem 0;
 	color: var(--color-text);
 }
 
@@ -627,12 +628,12 @@ main section:nth-of-type(6) article a:nth-of-type(2):hover::after {
 
 main section:nth-of-type(6) article img {
 	order: -1;
-	width:100%;
-	height:100%;
+	width: 100%;
+	height: 100%;
 	object-fit: cover;
 
-	grid-column-start:1;
-	grid-column-end:-1;
+	grid-column-start: 1;
+	grid-column-end: -1;
 }
 
 
@@ -675,33 +676,44 @@ main section:nth-of-type(7) ul {
 /* 2e sectie met foto's */
 /****************/
 
-main section:nth-of-type(8) {
-	gap: 2em;
-	display: grid;
-	margin: 0;
-	padding: 0;
+/* main section:nth-of-type(8) ul {
+    text-decoration: none;
+    position: relative;
+    justify-content: space-between;
+    display:grid;
+    gap: 2em;
+    margin: 0;
 }
 
-main section:nth-of-type(8) ul {
-	text-decoration: none;
-	position: relative;
-	justify-content: space-between;
-	gap: 2em;
-	margin: 0;
+
+
+main section:nth-of-type(8) ul li a img {
+	order: -1;
+	width:100%;
+	height:100%;
+	object-fit: cover;
+
+	grid-column-start:1;
+	grid-column-end:-1;
+	grid-template-rows:25vw repeat(4, max-content) 2em;
+	grid-template-columns: 2em 1fr 2em;
 }
 
-main section:nth-of-type(8) li {
+
+main section:nth-of-type(8) ul li a {
 	text-decoration: none;
-	gap: 2em;
-	/* grid-template-rows:25vw repeat(4, max-content) 2em; */
-	/* grid-template-columns: 2em 1fr 2em; */
-	padding: 1.5em;
+	grid-template-rows:25vw repeat(4, max-content) 2em;
+	grid-template-columns: 2em 1fr 2em;
+	padding:3em;
 	background-color: var(--wit);
 	border-bottom-right-radius: 2em;
 	list-style-type: none;
 	margin-left: 0;
 	width: fit-content;
 	background-repeat: no-repeat;
+
+	background-color: var(--wit);
+	border-bottom-right-radius: 2em;
 }
 
 main section:nth-of-type(8) ul li a {
@@ -713,7 +725,6 @@ main section:nth-of-type(8) ul li a {
 main section:nth-of-type(8) ul li a h4 {
 	font-family: 'Poppins', sans-serif;
 	font-style: bold;
-	/* font-weight: 600; */
 	font-size: 1.5rem;
 	color: var(--marineblauw);
 	
@@ -743,17 +754,84 @@ main section:nth-of-type(8) ul li a:nth-of-type(2)::after {
 	padding: 1rem;
 	margin-left: .5rem;
 	transition: .5s;
+} */
+
+
+
+/****************/
+/* 2e sectie met foto's */
+/****************/
+main section:nth-of-type(8) ul {
+	display: grid;
+	gap: 2em;
+	padding: 0;
+	list-style-type: none;
 }
 
-main section:nth-of-type(8) li img {
-	order: -1;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	grid-column-start:1;
-	grid-column-end:-1;
-	justify-items: stretch;
+main section:nth-of-type(8) ul li {
+	background-color: var(--wit);
+	border-bottom-right-radius: 2em;
+	overflow: hidden;
 }
+
+main section:nth-of-type(8) ul li a {
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	text-decoration: none;
+	color: inherit;
+}
+
+main section:nth-of-type(8) ul li img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	display: block;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+main section:nth-of-type(8) ul li h4 {
+	font-family: 'Poppins', sans-serif;
+	color: var(--marineblauw);
+	font-size: 1.6rem;
+	padding: 1.5rem 1.5rem 0 1.5rem;
+	line-height: 1.3;
+	/* position: relative; */
+}
+
+main section:nth-of-type(8) ul li p {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.3rem;
+	color: var(--marineblauw);
+	line-height: 1.6;
+	padding: 1rem 1.5rem 1.5rem 1.5rem;
+}
+
+main section:nth-of-type(8) ul li p:hover {
+	color: var(--rood);
+}
+
+main section:nth-of-type(8) ul li p:last-of-type {
+	font-family: 'PoppinsBold', sans-serif;
+	color: var(--rood);
+	position: relative;
+}
+
+/* main section:nth-of-type(8) ul li p:last-of-type:hover {
+	color: var(--rodehover)
+} */
+
+main section:nth-of-type(8) ul li p:last-of-type::after {
+	content: ">";
+	transition: 0.3s;
+}
+
+main section:nth-of-type(8) ul li a:hover p:last-of-type::after {
+	padding-left: 0.5rem;
+	color: var(--rodehover);
+}
+
+
 /* einde 2e section */
 
 
@@ -778,15 +856,12 @@ main section:nth-of-type(9) article {
 
 main section:nth-of-type(9) article img {
 	order: -1;
-	width:100%;
-	height:100%;
+	width: 100%;
+	height: 100%;
 	object-fit: cover;
-	grid-column-start:1;
-	grid-column-end:-1;
-	/* box-shadow: var(--color-text); */
-	/* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); */
+	grid-column-start: 1;
+	grid-column-end: -1;
 	border-bottom-right-radius: 2em;
-	/* background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.6)); */
 	background: linear-gradient(transparent, rgb(0 0 0 / .8));
 }
 
@@ -798,12 +873,10 @@ main section:nth-of-type(9) article p:nth-of-type(1) {
 	font-size: 1.660rem;
 	font-family: 'Poppins', sans-serif;
 	font-style: bold;
-	color:var(--wit);
+	color: var(--wit);
 	position: absolute;
 	text-align: left;
 	margin-left: 2rem;
-	/* padding-top: 3em; */
-	/* line-height: 7em; */
 	text-shadow: var(--color-text);
 }
 
@@ -816,7 +889,6 @@ main section:nth-of-type(9) article p:nth-of-type(2) {
 	position: absolute;
 	border-bottom-left-radius: 1.5em;
 	align-items: center;
-	/* gap: 2em; */
 	margin-left: 2rem;
 	margin-top: 10rem;
 	box-shadow: 0 4px 10px var(--color-text);
@@ -825,10 +897,82 @@ main section:nth-of-type(9) article p:nth-of-type(2) {
 /****************/
 /* NIEUWS SECTIE */
 /****************/
-main article h4 {
+
+main article:nth-of-type(9) {
+	display: grid;
+	margin: 0;
+	gap: 2em;
+}
+
+main article:nth-of-type(9) h4:first-of-type {
 	font-family: 'Poppins', sans-serif;
 	font-size: 1.8rem;
+	color: var(--marineblauw);
 }
+
+main article:nth-of-type(9)>p {
+	background-color: var(--wit);
+
+}
+
+main article ul {
+	display: grid;
+	margin: .8rem;
+	gap: 2em;
+
+}
+
+main article ul li {
+	background-color: var(--wit);
+	padding: 2rem;
+	border-bottom-right-radius: 1.8rem;
+}
+
+main article ul li h4 {
+	font-family: 'PoppinsBold', sans-serif;
+	font-size: 1.5rem;
+	color: var(--marineblauw);
+	margin: .8rem;
+}
+
+main article ul li p:first-of-type {
+	color: var(--grijs);
+	font-size: 1.1rem;
+	margin: .8rem;
+}
+
+main article ul li p:nth-of-type(2) {
+	color: var(--marineblauw);
+	font-size: 1.3rem;
+	margin: .8rem;
+}
+
+main article ul li p:nth-of-type(2):hover {
+	color:var(--rood);
+}
+
+main article h3 {
+	font-size: 1.8rem;
+	margin: .6rem;
+	color:var(--marineblauw);
+}
+
+main article ul a:nth-of-type(4) {
+	color: var(--rood);
+	font-family: 'PoppinsBold', sans-serif;
+	margin: 0;
+	font-size: 1.2rem;
+}
+
+main article ul a:nth-of-type(4):hover {
+	color:var(--rodehover);
+}
+
+main article ul a:nth-of-type(4)::after {
+	content:">";
+	margin-left: .5rem;
+}
+
 
 /* main article p {
 	font-family: 'Poppins', sans-serif;
@@ -837,8 +981,11 @@ main article h4 {
 	padding: 1.6rem
 } */
 
+
+/* apart stukje code?? */
 main ul:nth-of-type(4) li p {
 	list-style-type: none;
+
 }
 
 p* {
