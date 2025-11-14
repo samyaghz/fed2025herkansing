@@ -1008,7 +1008,6 @@ main ul:nth-of-type(4) li p {
 /****************/
 /* LIJSTJE LINKS */
 /****************/
-
 main section:nth-of-type(7) h4 {
 	font-family: 'PoppinsBold', sans-serif;
 	color: var(--marineblauw);
@@ -1039,8 +1038,6 @@ main section:nth-of-type(7) li::before {
 	line-height: 1.25em;
 }
 
-
-
 main section:nth-of-type(7) li a {
 	text-decoration: var(--rood);
 	color:var(--marineblauw);
@@ -1054,7 +1051,10 @@ main section:nth-of-type(7) li a:hover {
 	color: var(--rood);
 	transition: .3s;
 }
+/* einde lijstje met links */
 
+
+/* Toekomstmakers stukje tekst en titel */
 main section:nth-of-type(8) article h4 {
 	font-size: 2em;
 	font-family: 'PoppinsBold', sans-serif;
@@ -1062,6 +1062,7 @@ main section:nth-of-type(8) article h4 {
 	margin: .5rem;
 }
 
+/* de eerste p */
 main section:nth-of-type(8) article p:first-of-type {
 	background-color: var(--wit);
 	font-size: 1.3rem;
@@ -1071,6 +1072,7 @@ main section:nth-of-type(8) article p:first-of-type {
 	display: block;
 }
 
+/* tweede tekstblokje */
 main section:nth-of-type(8) article p:nth-of-type(2) {
 	margin: .7rem;
 	font-size: 1.4rem;
