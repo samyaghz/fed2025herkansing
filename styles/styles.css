@@ -87,6 +87,119 @@ header {
 	z-index: 100;
 }
 
+/**************/
+/* HAMBURGER MENU */
+/**************/
+nav ul li {
+	margin: 20%;
+	text-transform: uppercase;
+	list-style-type: none;
+	content: "▾";
+
+}
+
+nav ul li a {
+	color: var(--grijs);
+	text-decoration: none;
+	font-style: bold;
+	font-size: 1.5rem;
+}
+
+header>button {
+	order: -1;
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	translate: -100%;
+	transition: 0.2s;
+	background-color: white;
+	/* z-index: 1000; */
+}
+
+/* als menu open is */
+nav.is-open {
+	translate: 0%;
+}
+
+@media (min-width:38em) {
+	header>button {
+
+		display: none;
+
+	}
+
+	nav {
+
+		position: static;
+		translate: 0;
+
+		background: none;
+	}
+
+	nav button {
+
+		display: none;
+
+	}
+
+	nav ul {
+
+		display: flex;
+		gap: 1em;
+
+	}
+
+	nav a {
+		font-family: 'PoppinsBold', sans-serif;
+		font-size: 2em;
+		border: none;
+		flex-direction: column;
+	}
+
+	header>a:last-of-type {
+
+		flex-direction: column;
+
+	}
+}
+
+
+
+/****************************************************************/
+/* styling voor de header als de browser minimaal 57em breed is */
+/****************************************************************/
+@media (min-width:57em) {
+
+	header>a:last-of-type,
+	nav a {
+		font-family: 'PoppinsBold', sans-serif;
+		font-size: 2em;
+		color: var(--rood);
+		flex-direction: row;
+		background-color: var(--color-whitefont);
+	}
+}
+
+/*  
+main section h2 {
+	position: relative;
+	
+  }
+  
+main section h2 {
+	position: absolute;
+	bottom: 1rem;
+	left: 1rem;
+	right: 1rem;
+	
+  }
+*/
+
 body {
 	background-color: var(--color-background);
 }

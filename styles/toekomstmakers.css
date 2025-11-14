@@ -67,6 +67,7 @@ main section:nth-of-type(7) article {
 	padding-right: 0;
 	padding-bottom: 1.5rem;
 	gap: 2em;
+	margin: .8rem;
 }
 
 main section:nth-of-type(7) article h3 {
@@ -98,10 +99,12 @@ main section:nth-of-type(7) article img {
 	height: auto;
 	display: block;
 	object-fit: cover;
+	border-radius: 0;
 }
 /*********************/
 /* einde code van de 2 articles */
 /*********************/
+
 
 
 /*********************/
@@ -177,8 +180,8 @@ main img {
 }
 
 main section:first-of-type h2 {
-	font-family: 'Poppins', sans-serif;
-	font-size: 1.8rem;
+	font-family: 'PoppinsBold', sans-serif;
+	font-size: 2rem;
 	font-weight: 900;
 	background-color: var(--color-background);
 	color: var(--marineblauw);
@@ -189,11 +192,13 @@ main section:first-of-type h2 {
 
 main section:first-of-type p {
 	font-family: 'Poppins', sans-serif;
+	font-style: bold;
 	font-size: 1rem;
 	background-color: var(--wit);
 	padding: .5rem;
 	border-bottom-left-radius: 1.3rem;
 	display: inline-block;
+	margin: 1rem;
 	/* position: absolute; */
 }
 
@@ -206,12 +211,12 @@ main>p:first-of-type {
 /*********************/
 /* EERSTE LIJSTJE */
 /*********************/
-main ul:nth-of-type(1) {
+main ul:first-of-type {
 	/* display: grid; */
 	list-style-type: none;
 }
 
-main ul:nth-of-type(1) li:nth-of-type(1) {
+main ul:first-of-type li:nth-of-type(1) {
 	background-color: var(--rood);
 	padding: 2em;
 	font-family: 'Poppins', sans-serif;
